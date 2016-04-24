@@ -46,13 +46,13 @@ namespace XamlPageTransitions
         private void ButtonLeft_Click(object sender, RoutedEventArgs e)
         {
             Frame rootFrame = Window.Current.Content as Frame;
-            rootFrame.Navigate(typeof(MainPage), false);
+            rootFrame.Navigate(typeof(MainPage), parameter: false);
         }
 
         private void ButtonRight_Click(object sender, RoutedEventArgs e)
         {
             Frame rootFrame = Window.Current.Content as Frame;
-            rootFrame.Navigate(typeof(MainPage), true);
+            rootFrame.Navigate(typeof(MainPage), parameter: true);
         }
 
         private void toTransitions_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -120,13 +120,13 @@ namespace XamlPageTransitions
             }
             else if (transition is ContentThemeTransition)
             {
-                var popupAnimation = transition as ContentThemeTransition;
-                popupAnimation.HorizontalOffset = towardsRight ? 300 : -300;
+                var contentAnimation = transition as ContentThemeTransition;
+                contentAnimation.HorizontalOffset = towardsRight ? 300 : -300;
             }
             else if (transition is PaneThemeTransition)
             {
-                var popupAnimation = transition as PaneThemeTransition;
-                popupAnimation.Edge = towardsRight ? EdgeTransitionLocation.Right : EdgeTransitionLocation.Left;
+                var paneAnimation = transition as PaneThemeTransition;
+                paneAnimation.Edge = towardsRight ? EdgeTransitionLocation.Right : EdgeTransitionLocation.Left;
             }
         }
     }
