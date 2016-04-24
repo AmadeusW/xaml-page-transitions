@@ -55,6 +55,12 @@ namespace XamlPageTransitions
             rootFrame.Navigate(typeof(MainPage), parameter: true);
         }
 
+        private void ButtonPop_Click(object sender, RoutedEventArgs e)
+        {
+            Frame rootFrame = Window.Current.Content as Frame;
+            rootFrame.Navigate(typeof(Popup));
+        }
+
         private void toTransitions_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             var selectedTypeName = toTransitions.SelectedItem.ToString();

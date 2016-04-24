@@ -14,8 +14,9 @@
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="30"/>
-            <ColumnDefinition Width="150"/>
-            <ColumnDefinition Width="150"/>
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="100"/>
             <ColumnDefinition Width="1*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
@@ -30,16 +31,17 @@
             <RowDefinition Height="30"/>
             <RowDefinition Height="3*"/>
         </Grid.RowDefinitions>
-        <TextBlock Grid.Column="1" Grid.Row="1" TextWrapping="Wrap" Text="UWP App Transitions" FontSize="24" Grid.ColumnSpan="2"/>
+        <TextBlock Grid.Column="1" Grid.Row="1" TextWrapping="Wrap" Text="UWP App Transitions" FontSize="24" Grid.ColumnSpan="3"/>
 
-        <TextBlock Grid.Column="1" Grid.Row="2" TextWrapping="Wrap" Text="To Transition" Grid.ColumnSpan="2" />
-        <ComboBox x:Name="toTransitions" Grid.Column="1" Grid.Row="3" HorizontalAlignment="Left" Width="275" SelectionChanged="toTransitions_SelectionChanged" Grid.ColumnSpan="2" />
+        <TextBlock Grid.Column="1" Grid.Row="2" TextWrapping="Wrap" Text="To Transition" Grid.ColumnSpan="3" />
+        <ComboBox x:Name="toTransitions" Grid.Column="1" Grid.Row="3" HorizontalAlignment="Left" Width="275" SelectionChanged="toTransitions_SelectionChanged" Grid.ColumnSpan="3" />
 
-        <TextBlock Grid.Column="1" Grid.Row="4" TextWrapping="Wrap" Text="From Transition" Grid.ColumnSpan="2" />
-        <ComboBox x:Name="fromTransitions" Grid.Column="1" Grid.Row="5" HorizontalAlignment="Left" Width="275" SelectionChanged="fromTransitions_SelectionChanged" Grid.ColumnSpan="2" />
+        <TextBlock Grid.Column="1" Grid.Row="4" TextWrapping="Wrap" Text="From Transition" Grid.ColumnSpan="3" />
+        <ComboBox x:Name="fromTransitions" Grid.Column="1" Grid.Row="5" HorizontalAlignment="Left" Width="275" SelectionChanged="fromTransitions_SelectionChanged" Grid.ColumnSpan="3" />
 
-        <Button Content="Navigate" Grid.Column="1" Grid.Row="7" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Click="Button_Click" Grid.ColumnSpan="2" />
+        <Button Content="Navigate" Grid.Column="1" Grid.Row="7" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Click="Button_Click" Grid.ColumnSpan="3" />
         <Button Content="Left" Grid.Column="1" Grid.Row="8" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Click="ButtonLeft_Click" />
-        <Button Content="Right" Grid.Column="2" Grid.Row="8" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Click="ButtonRight_Click" />
+        <Button Content="Popup" Grid.Column="2" Grid.Row="8" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Click="ButtonPop_Click" />
+        <Button Content="Right" Grid.Column="3" Grid.Row="8" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Click="ButtonRight_Click" />
     </Grid>
 </Page>
