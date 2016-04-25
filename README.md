@@ -1,7 +1,7 @@
 # xaml-page-transitions
 A demonstration of xaml page transitions in Universal Apps
 
-See [videos of all transitions](http://amadeusw.com/xaml/animated-navigation-universal-app) on my blog.
+See [videos of all transitions and explained code snippets on my blog](http://amadeusw.com/xaml/animated-navigation-universal-app).
 
 # Notable code:
 
